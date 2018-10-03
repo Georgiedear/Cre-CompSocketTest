@@ -23,7 +23,7 @@ function brush (x, y) {
   triangle(mouseX, mouseY, 30, 5, 15, 5);
 
   //The stars
-  fill(random.mouseX, mouseY, 140, 110);
+  fill(mouseX, mouseY, 140, 110);
   ellipse(mouseX, mouseY, 10, 50);
   ellipse(mouseX, mouseY, 50, 10);
 }
