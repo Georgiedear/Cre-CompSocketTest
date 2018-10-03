@@ -1,0 +1,9 @@
+#user strict;
+var express = require ('express');
+
+var app = express();
+var server = app.listen("3000");
+
+app.use(express.static('public'));
+
+console.log("My Socket Server is Running Sup");
