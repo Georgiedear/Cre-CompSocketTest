@@ -3,7 +3,7 @@
 function setup() {
   createCanvas(windowWidth,windowHeight);
   var x;
-  var y
+  var y;
   background (0);
   noStroke ();
 
@@ -12,7 +12,7 @@ function setup() {
   //---------------------------------------------------------------
 
 function draw () {
-  if (mouseIsPressed || (mouseButton===LEFT)) {
+  if (mouseIsPressed) {
     brush(mouseX, mouseY);
   }
 }
@@ -20,7 +20,7 @@ function draw () {
 function brush (x, y) {
   //Tails of the shooting starts
   fill(mouseX, mouseY, 190, 110);
-  triangle(mouseX, mouseY, 30, 5, 15, 5);
+//  triangle(mouseX, mouseY, 30, 5, 15, 5);
 
   //The stars
   fill(mouseX, mouseY, 140, 110);
