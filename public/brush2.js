@@ -18,14 +18,9 @@ text('TORSO', windowWidth/2, windowHeight/2);
   }
   //--------------------------------------------------------------
   function brush () {
-    //Tails of the shooting starts
-  //  fill(mouseX, mouseY, 190, 110);
-  //  triangle(mouseX, mouseY, 30, 5, 15, 5);
 
-    //The stars
-  //  fill(mouseX, mouseY, 140);
-  //  ellipse(mouseX, mouseY, 10, 50);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+  strokeWeight(2);
+  fill(mouseX,mouseY,pmouseX,212);
+    rect(mouseX, mouseY, 20, 20);
     //ellipse(mouseX, mouseY,pmouseX, pmouseY);
-
   }
