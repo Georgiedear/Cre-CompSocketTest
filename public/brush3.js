@@ -18,14 +18,17 @@ text('LEGS', windowWidth/2, windowHeight/2);
   }
   //--------------------------------------------------------------
   function brush () {
-    //Tails of the shooting starts
-  //  fill(mouseX, mouseY, 190, 110);
-  //  triangle(mouseX, mouseY, 30, 5, 15, 5);
+noStroke();
+fill(random(mouseX), random(mouseY), 110);
+  triangle(mouseX, mouseY, pmouseX+20, pmouseY, mouseX+25, mouseY);
 
-    //The stars
-  //  fill(mouseX, mouseY, 140);
+
+
+
+
+  //  triangle(mouseX, mouseY, 30, 5, 15, 5);
   //  ellipse(mouseX, mouseY, 10, 50);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+  //  line(mouseX, mouseY, pmouseX, pmouseY);
     //ellipse(mouseX, mouseY,pmouseX, pmouseY);
 
   }
