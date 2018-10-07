@@ -1,28 +1,33 @@
-function setup() {
-createCanvas(windowWidth, windowHeight);
-background(255);
-strokeWeight(10);
+var canvas;
 
-textSize(50);
-fill(230);
-text('TORSO', windowWidth/2, windowHeight/2);
+function setup() {
+canvas = createCanvas(windowWidth, windowHeight);
+canvas.style('display', 'block');
+canvas.position(0,0);
+
 
 }
 
 
-  function draw () {
+//  function draw () {
 
-    if (mouseIsPressed) {
-      brush();
-    }
+    //if (mouseIsPressed) {
+      //touchMoved();
+  //  }
 
-  }
+  //}
   //--------------------------------------------------------------
-  function brush () {
+  function touchMoved () {
     noStroke();
 
-  fill(random(mouseX),random(mouseY),112);
+    fill(113, random(mouseX), random(mouseY));
 
-    rect(mouseX, mouseY, 20, 20);
+    ellipse(mouseX, mouseY, 30, 30);
     //ellipse(mouseX, mouseY,pmouseX, pmouseY);
+    return false;
   }
+
+function windowResized() {
+
+  resizeCanvas(windowWidth, windowHeight);
+}
